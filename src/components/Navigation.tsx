@@ -49,10 +49,11 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 md:gap-2 cursor-pointer" onClick={() => handleNavClick('inicio')}>
-              <Plane className={`h-5 w-5 md:h-6 md:w-6 ${isScrolled ? 'text-brand-accent' : 'text-white'}`} />
-              <span className={`serif text-xl md:text-2xl font-semibold tracking-tighter ${isScrolled ? 'text-brand-primary' : 'text-white'}`}>
-                FC TRAVEL
-              </span>
+              <img 
+                src="/Logo FC TRAVEL.png" 
+                alt="FC TRAVEL Logo" 
+                className={`h-10 md:h-12 w-auto object-contain transition-all ${isScrolled ? '' : 'brightness-0 invert'}`}
+              />
             </div>
 
             {/* Desktop Menu */}
@@ -111,8 +112,11 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
         <div className="p-6 flex flex-col h-full">
           <div className="flex items-center justify-between mb-12">
             <div className="flex items-center gap-2">
-              <Plane className="h-6 w-6 text-brand-accent" />
-              <span className="serif text-2xl font-semibold uppercase tracking-tighter">FC TRAVEL</span>
+              <img 
+                src="/Logo FC TRAVEL.png" 
+                alt="FC TRAVEL Logo" 
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X className="h-8 w-8" />

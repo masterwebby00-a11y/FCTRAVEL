@@ -53,16 +53,19 @@ export default function Login({ onLogin }: LoginProps) {
         transition={{ delay: 0.2 }}
         className="relative z-10 w-full max-w-md px-6"
       >
-        <div className="mb-8 text-center">
+        <div className="mb-8 text-center flex flex-col items-center">
           <motion.div 
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand-accent text-white"
+            className="mb-4"
           >
-            <Plane className="h-8 w-8" />
+            <img 
+              src="/Logo FC TRAVEL.png" 
+              alt="FC TRAVEL Logo" 
+              className="h-20 w-auto object-contain brightness-0 invert"
+            />
           </motion.div>
-          <h1 className="serif text-4xl font-light tracking-tight text-white">FC TRAVEL</h1>
           <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60">Member Access</p>
         </div>
 
