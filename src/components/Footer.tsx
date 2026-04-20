@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-8">
               <img 
                 src="/logo.png" 
-                alt="FC TRAVEL Logo" 
+                alt="FC Travel" 
                 style={{ height: '50px' }}
                 className="w-auto object-contain"
               />

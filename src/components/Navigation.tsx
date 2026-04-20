@@ -51,7 +51,7 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
             <div className="flex items-center gap-1.5 md:gap-2 cursor-pointer" onClick={() => handleNavClick('inicio')}>
               <img 
                 src="/logo.png" 
-                alt="FC TRAVEL Logo" 
+                alt="FC Travel" 
                 style={{ height: '50px' }}
                 className={`w-auto object-contain transition-all ${isScrolled ? '' : 'brightness-0 invert'}`}
               />
@@ -115,7 +115,7 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
             <div className="flex items-center gap-2">
               <img 
                 src="/logo.png" 
-                alt="FC TRAVEL Logo" 
+                alt="FC Travel" 
                 style={{ height: '50px' }}
                 className="w-auto object-contain brightness-0 invert"
               />

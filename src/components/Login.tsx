@@ -62,7 +62,7 @@ export default function Login({ onLogin }: LoginProps) {
           >
             <img 
               src="/logo.png" 
-              alt="FC TRAVEL Logo" 
+              alt="FC Travel" 
               style={{ height: '50px' }}
               className="w-auto object-contain brightness-0 invert"
             />
