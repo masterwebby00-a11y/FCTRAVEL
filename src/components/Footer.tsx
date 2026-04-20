@@ -12,7 +12,8 @@ export default function Footer() {
               <img 
                 src="/logo.png" 
                 alt="FC TRAVEL Logo" 
-                className="h-[50px] w-auto object-contain"
+                style={{ height: '50px' }}
+                className="w-auto object-contain"
               />
             </div>
             <p className="text-gray-500 leading-relaxed mb-8">

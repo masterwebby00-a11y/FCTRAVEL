@@ -52,7 +52,8 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
               <img 
                 src="/logo.png" 
                 alt="FC TRAVEL Logo" 
-                className={`h-[50px] w-auto object-contain transition-all ${isScrolled ? '' : 'brightness-0 invert'}`}
+                style={{ height: '50px' }}
+                className={`w-auto object-contain transition-all ${isScrolled ? '' : 'brightness-0 invert'}`}
               />
             </div>
 
@@ -115,7 +116,8 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
               <img 
                 src="/logo.png" 
                 alt="FC TRAVEL Logo" 
-                className="h-[50px] w-auto object-contain brightness-0 invert"
+                style={{ height: '50px' }}
+                className="w-auto object-contain brightness-0 invert"
               />
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
