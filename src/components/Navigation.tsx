@@ -50,10 +50,11 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-1.5 md:gap-2 cursor-pointer" onClick={() => handleNavClick('inicio')}>
               <img 
-                src="/logo.png" 
-                alt="FC Travel" 
-                style={{ height: '50px' }}
-                className={`w-auto object-contain transition-all ${isScrolled ? '' : 'brightness-0 invert'}`}
+  src="/logo.png" 
+  alt="FC Travel" 
+  style={{ height: '50px' }}
+  className="w-auto object-contain transition-all"
+/>
               />
             </div>
 
@@ -114,11 +115,11 @@ export default function Navigation({ onLogout, activeSection, setActiveSection }
           <div className="flex items-center justify-between mb-12">
             <div className="flex items-center gap-2">
               <img 
-                src="/logo.png" 
-                alt="FC Travel" 
-                style={{ height: '50px' }}
-                className="w-auto object-contain brightness-0 invert"
-              />
+  src="/logo.png" 
+  alt="FC Travel" 
+  style={{ height: '50px' }}
+  className="w-auto object-contain"
+/>
             </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <X className="h-8 w-8" />
