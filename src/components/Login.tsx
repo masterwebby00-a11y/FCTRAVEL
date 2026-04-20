@@ -61,9 +61,9 @@ export default function Login({ onLogin }: LoginProps) {
             className="mb-4"
           >
             <img 
-              src="/Logo FC TRAVEL.png" 
+              src="/logo.png" 
               alt="FC TRAVEL Logo" 
-              className="h-20 w-auto object-contain brightness-0 invert"
+              className="h-[50px] w-auto object-contain brightness-0 invert"
             />
           </motion.div>
           <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60">Member Access</p>

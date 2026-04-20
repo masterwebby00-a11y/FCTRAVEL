@@ -10,9 +10,9 @@ export default function Footer() {
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-8">
               <img 
-                src="/Logo FC TRAVEL.png" 
+                src="/logo.png" 
                 alt="FC TRAVEL Logo" 
-                className="h-12 w-auto object-contain"
+                className="h-[50px] w-auto object-contain"
               />
             </div>
             <p className="text-gray-500 leading-relaxed mb-8">
