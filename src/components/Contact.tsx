@@ -41,6 +41,17 @@ export default function Contact() {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    
+    const message = `Hola FC TRAVEL, quiero cotizar un destino.%0A%0A` +
+      `*Datos del Socio:*%0A` +
+      `- Nombre: ${formData.nombre} ${formData.apellido}%0A` +
+      `- Email: ${formData.email}%0A` +
+      `- No. Socio: ${formData.socio || 'No proporcionado'}%0A` +
+      `- Destino: ${formData.destino}`;
+
+    // Redirigir a WhatsApp (usamos el primer número de contacto)
+    window.open(`https://wa.me/50255855004?text=${message}`, '_blank');
+    
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 5000);
   };

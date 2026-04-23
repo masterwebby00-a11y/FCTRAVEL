@@ -9,6 +9,7 @@ import Destinations from './components/Destinations';
 import Magazine from './components/Magazine';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -72,6 +73,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView } from 'motion/react';
 import { MapPin, ArrowRight } from 'lucide-react';
 
 interface Destination {
@@ -63,6 +63,38 @@ const destinations: Destination[] = [
     type: 'internacional'
   }
 ];
+
+function StatCounter({ target }: { target: number }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    if (isInView) {
+      let start = 0;
+      const duration = 4000; // 4 seconds
+      const increment = target / (duration / 16); // ~60fps
+
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          setCount(target);
+          clearInterval(timer);
+        } else {
+          setCount(start);
+        }
+      }, 16);
+
+      return () => clearInterval(timer);
+    }
+  }, [isInView, target]);
+
+  return (
+    <span ref={ref} className="serif text-5xl md:text-6xl font-bold text-brand-primary mb-2">
+      {count.toFixed(1)}%
+    </span>
+  );
+}
 
 export default function Destinations() {
   const [filter, setFilter] = useState<'nacional' | 'internacional'>('nacional');
@@ -156,6 +188,26 @@ export default function Destinations() {
           ))}
         </AnimatePresence>
       </div>
+
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mt-20 flex flex-col items-center text-center"
+      >
+        <div className="bg-white border border-gray-100 shadow-xl rounded-[40px] px-12 py-10 flex flex-col md:flex-row items-center gap-8 md:gap-16">
+          <div className="flex flex-col items-center">
+            <StatCounter target={92.4} />
+            <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-brand-accent">Excelente</span>
+          </div>
+          <div className="h-px w-12 md:h-16 md:w-px bg-gray-200" />
+          <div className="max-w-xs">
+            <p className="text-gray-500 text-sm italic leading-relaxed">
+              "El nivel de satisfacción de nuestros socios refleja nuestro compromiso inquebrantable con la calidad y la excelencia en cada destino."
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 }

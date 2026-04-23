@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { motion } from 'motion/react';
-import { Lock, User, MapPin } from 'lucide-react';
-
-// Importación de recursos locales
-import fondoImg from '../assets/fondo.jpeg';
-import logoImg from '../assets/LOGO-login.png';
+import { Lock, User, Plane, MapPin } from 'lucide-react';
 
 interface LoginProps {
   onLogin: (status: boolean) => void;
@@ -22,6 +18,7 @@ export default function Login({ onLogin }: LoginProps) {
     setIsLoading(true);
     setError('');
 
+    // Simulating a bit of delay for the "experience"
     setTimeout(() => {
       if (username === 'FCTRAVELMEMBER' && password === 'FCGT2026') {
         onLogin(true);
@@ -39,12 +36,13 @@ export default function Login({ onLogin }: LoginProps) {
       exit={{ opacity: 0 }}
       className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-brand-primary"
     >
-      {/* Fondo personalizado */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={fondoImg} 
-          alt="Background" 
+          src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2070&auto=format&fit=crop" 
+          alt="Couple on the beach from behind" 
           className="h-full w-full object-cover opacity-40"
+          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-transparent to-transparent" />
       </div>
@@ -60,15 +58,11 @@ export default function Login({ onLogin }: LoginProps) {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mb-4 inline-flex items-center justify-center"
+            className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand-accent text-white"
           >
-            <img 
-              src={logoImg} 
-              alt="Logo" 
-              className="h-28 w-auto drop-shadow-2xl" 
-            />
+            <Plane className="h-8 w-8" />
           </motion.div>
-          {/* Se eliminó el h1 con el texto escrito */}
+          <h1 className="serif text-4xl font-light tracking-tight text-white">FC TRAVEL</h1>
           <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60">Member Access</p>
         </div>
 

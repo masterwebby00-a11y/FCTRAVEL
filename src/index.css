@@ -15,6 +15,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .serif {
   font-family: var(--font-serif);
 }
