@@ -138,7 +138,7 @@ export default function Destinations() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence mode="wait">
           {filteredDestinations.map((dest) => (
             <motion.div
@@ -147,9 +147,9 @@ export default function Destinations() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.4 }}
-              className="group bg-white rounded-[40px] overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-gray-100"
+              className="group bg-white rounded-[32px] overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-gray-100"
             >
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={dest.image}
                   alt={dest.title}
