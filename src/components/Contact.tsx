@@ -15,9 +15,9 @@ export default function Contact() {
   const contactInfo = [
     {
       title: 'Dirección',
-      content: 'Edificio Ilumina, Roosevelt, Oficina 601A.',
+      content: 'Calzada Roosevelt 33-86, zona 7, edificio Ilumina if. 601 A',
       icon: MapPin,
-      link: 'https://maps.google.com/?q=Edificio+Ilumina+Ciudad+de+Guatemala'
+      link: 'https://www.google.com/maps/search/?api=1&query=Calzada+Roosevelt+33-86+zona+7+edificio+Ilumina+oficina+601A'
     },
     {
       title: 'Teléfonos',

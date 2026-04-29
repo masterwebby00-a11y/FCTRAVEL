@@ -51,11 +51,11 @@ export default function Footer() {
             <div className="col-span-2 lg:col-span-1">
               <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-6 text-brand-primary">Ubicación</h4>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Edificio Ilumina, Calzada Roosevelt,<br />
-                Oficina 601A. Ciudad de Guatemala.
+                Calzada Roosevelt 33-86, zona 7,<br />
+                Edificio Ilumina if. 601 A.
               </p>
               <p className="mt-4 text-sm font-bold text-brand-primary">
-                +502 2296-4430
+                +502 2296-4430 / 2296-4431
               </p>
             </div>
           </div>

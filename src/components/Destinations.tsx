@@ -49,7 +49,7 @@ const destinations: Destination[] = [
   {
     id: 5,
     title: 'Cancún, México',
-    description: '4-3 Noches de hospedaje. Incluye: Desayunos, boleto ida y vuelta, traslados aeropuerto hotel y hotel aeropuerto.',
+    description: '4-3 Noches de hospedaje. Incluye: Desayunos, boleto ida y vuelta, traslados aeropuerto-hotel y hotel-aeropuerto.',
     price: 'Desde Q4,500.00',
     image: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2070&auto=format&fit=crop',
     type: 'internacional'
@@ -57,7 +57,7 @@ const destinations: Destination[] = [
   {
     id: 6,
     title: 'Punta Cana, Rep. Dominicana',
-    description: '6-5 Noches de hospedaje. Incluye: Boleto ida y vuelta, traslados aeropuerto hotel y hotel aeropuerto.',
+    description: '6-5 Noches de hospedaje. Incluye: Boleto ida y vuelta, traslados aeropuerto-hotel y hotel-aeropuerto.',
     price: 'Desde Q7,090.00',
     image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2049&auto=format&fit=crop',
     type: 'internacional'
