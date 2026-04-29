@@ -39,9 +39,9 @@ export default function Login({ onLogin }: LoginProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2070&auto=format&fit=crop" 
-          alt="Couple on the beach from behind" 
-          className="h-full w-full object-cover opacity-40"
+          src="https://i.postimg.cc/VNfNfGhn/asian-young-happy-family-enjoy-vacation-beach-evening-dad-mom-kid-relax-running-together-near-sea-wh.jpg" 
+          alt="Family on the beach at sunset" 
+          className="h-full w-full object-cover opacity-60"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-transparent to-transparent" />
@@ -53,16 +53,22 @@ export default function Login({ onLogin }: LoginProps) {
         transition={{ delay: 0.2 }}
         className="relative z-10 w-full max-w-md px-6"
       >
-        <div className="mb-8 text-center">
+        <div className="mb-8 text-center flex flex-col items-center">
           <motion.div 
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-brand-accent text-white"
+            className="mb-4"
           >
-            <Plane className="h-8 w-8" />
+            <div className="h-24 w-auto drop-shadow-2xl">
+              <img 
+                src="https://i.postimg.cc/PJpW6rzt/logo.png" 
+                alt="FC TRAVEL Logo" 
+                className="h-full w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+            </div>
           </motion.div>
-          <h1 className="serif text-4xl font-light tracking-tight text-white">FC TRAVEL</h1>
           <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60">Member Access</p>
         </div>
 

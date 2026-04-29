@@ -18,7 +18,7 @@ const destinations: Destination[] = [
     title: 'Antigua Guatemala',
     description: '3-2 noches de hospedaje.',
     price: 'Desde Q599.00',
-    image: 'https://images.unsplash.com/photo-1596434440026-64668ba4df21?q=80&w=2072&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/k4hLPXVT/Antigua-Guatemala.jpg',
     type: 'nacional'
   },
   {
@@ -26,7 +26,7 @@ const destinations: Destination[] = [
     title: 'Casas en Monterrico',
     description: '3-2 noches de hospedaje. Incluye: (8 a 10 personas entre semana).',
     price: 'Desde Q2,650.00',
-    image: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/XvqTHCqG/casamonterrico.jpg',
     type: 'nacional'
   },
   {
@@ -34,7 +34,7 @@ const destinations: Destination[] = [
     title: 'Cobán Alta Verapaz',
     description: '3-2 Noches de hospedaje. Incluye: desayunos.',
     price: 'Desde Q649.00',
-    image: 'https://images.unsplash.com/photo-1589412227349-33ad69046ccf?q=80&w=2074&auto=format&fit=crop',
+    image: 'https://i.postimg.cc/pXB4PZnx/Coban.jpg',
     type: 'nacional'
   },
   // Internacionales

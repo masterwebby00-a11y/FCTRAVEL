@@ -24,11 +24,11 @@ export default function About() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/5] shadow-2xl">
+          <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/3] shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1974&auto=format&fit=crop" 
+              src="https://i.postimg.cc/QC7BpC1R/couple-talking-drinking-coconut-milk-by-pool-vacation-(1).jpg" 
               alt="About FC Travel" 
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -73,7 +73,7 @@ export default function About() {
                     <img 
                       src={item.logo} 
                       alt={item.name} 
-                      className="w-full h-full object-cover"
+                      className="max-h-[80%] max-w-[80%] object-contain"
                       referrerPolicy="no-referrer"
                     />
                   </div>

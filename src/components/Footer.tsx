@@ -9,10 +9,12 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start mb-24 gap-16">
           <div className="max-w-xs">
             <div className="flex items-center gap-2 mb-8">
-              <Plane className="h-8 w-8 text-brand-accent" />
-              <span className="serif text-3xl font-bold tracking-tighter text-brand-primary">
-                FC TRAVEL
-              </span>
+              <img 
+                src="https://i.postimg.cc/PJpW6rzt/logo.png" 
+                alt="FC TRAVEL" 
+                className="h-24 md:h-28 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
             </div>
             <p className="text-gray-500 leading-relaxed mb-8">
               Más de una década conectando a nuestros socios con el mundo. Acceso privado, tarifas exclusivas y la libertad de crear tu propia travesía con el respaldo de FC Travel.
