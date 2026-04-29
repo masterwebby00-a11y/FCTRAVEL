@@ -39,8 +39,8 @@ export default function Login({ onLogin }: LoginProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://i.postimg.cc/VNfNfGhn/asian-young-happy-family-enjoy-vacation-beach-evening-dad-mom-kid-relax-running-together-near-sea-wh.jpg" 
-          alt="Family on the beach at sunset" 
+          src="https://i.postimg.cc/D0bT0bLS/man-holding-woman-back-evening-sea-shore-(1).jpg" 
+          alt="Couple on the beach at evening" 
           className="h-full w-full object-cover opacity-60"
           referrerPolicy="no-referrer"
         />
@@ -69,7 +69,7 @@ export default function Login({ onLogin }: LoginProps) {
               />
             </div>
           </motion.div>
-          <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60">Member Access</p>
+          <p className="mt-2 text-sm uppercase tracking-[0.2em] text-white/60 font-medium">Acceso Exclusivo para Socios</p>
         </div>
 
         <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-xl border border-white/10 shadow-2xl">
