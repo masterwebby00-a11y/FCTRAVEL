@@ -5,11 +5,13 @@ export default function About() {
   const associations = [
     { 
       name: 'INGUAT', 
-      logo: 'https://visitguatemala.com/wp-content/uploads/2024/01/logo-inguat-blanco.png' 
+      logo: 'https://i.postimg.cc/MG2k6vry/Whats-App-Image-2026-04-23-at-12-59-24.jpg',
+      link: 'https://registro.inguat.gob.gt/agencias-de-viajes-registradas/'
     },
     { 
       name: 'Cámara de Turismo de Guatemala', 
-      logo: 'https://camtur.org/wp-content/uploads/2021/05/logo_camtur.png' 
+      logo: 'https://i.postimg.cc/XvSMjpD9/Whats-App-Image-2026-04-23-at-13-37-07.jpg',
+      link: 'https://camtur.org/guatemala-asociados/'
     },
   ];
 
@@ -65,21 +67,33 @@ export default function About() {
           <div className="mt-12">
             <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-8 underline underline-offset-4 decoration-brand-accent text-center lg:text-left">Asociados con</p>
             <div className="flex flex-wrap gap-8 md:gap-12 justify-center lg:justify-start items-center">
-              {associations.map((item) => (
-                <div key={item.name} className="flex flex-col items-center group">
-                  <div className="h-16 w-32 md:h-20 md:w-40 flex items-center justify-center p-2 rounded-xl bg-white border border-gray-100 shadow-sm transition-all grayscale hover:grayscale-0 hover:shadow-md">
+              {associations.map((item) => {
+                const content = (
+                  <div className="h-16 w-32 md:h-20 md:w-40 flex items-center justify-center rounded-xl bg-white border border-gray-100 shadow-sm transition-all grayscale hover:grayscale-0 hover:shadow-md overflow-hidden">
                     <img 
                       src={item.logo} 
                       alt={item.name} 
-                      className={`max-h-[80%] max-w-[80%] object-contain ${item.name === 'INGUAT' ? 'brightness-0 opacity-80' : ''}`}
+                      className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
                   </div>
-                  <span className="text-[7px] uppercase font-bold mt-2 text-center max-w-[100px] text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity tracking-widest leading-none">
-                    {item.name}
-                  </span>
-                </div>
-              ))}
+                );
+
+                return (
+                  <div key={item.name} className="flex flex-col items-center group text-center">
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        {content}
+                      </a>
+                    ) : (
+                      content
+                    )}
+                    <span className="text-[7px] uppercase font-bold mt-2 text-center max-w-[100px] text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity tracking-widest leading-none">
+                      {item.name}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </motion.div>
