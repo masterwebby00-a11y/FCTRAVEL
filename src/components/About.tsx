@@ -17,14 +17,14 @@ export default function About() {
 
   return (
     <div className="container mx-auto px-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-32">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-12 xl:gap-20 items-center mb-32">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/3] shadow-2xl">
+          <div className="relative z-10 overflow-hidden rounded-[40px] aspect-[3/2] shadow-2xl">
             <img 
               src="https://i.postimg.cc/QC7BpC1R/couple-talking-drinking-coconut-milk-by-pool-vacation-(1).jpg" 
               alt="About FC Travel" 
