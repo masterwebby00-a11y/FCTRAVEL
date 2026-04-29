@@ -26,7 +26,7 @@ export default function About() {
         >
           <div className="relative z-10 overflow-hidden rounded-3xl aspect-[4/3] shadow-2xl">
             <img 
-              src="https://i.postimg.cc/QC7BpC1R/couple-talking-drinking-coconut-milk-by-pool-vacation-(1).jpg" 
+              src="https://i.postimg.cc/rsV3vnNR/couple-talking-drinking-coconut-milk-by-pool-vacation-(1).jpg" 
               alt="About FC Travel" 
               className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
               referrerPolicy="no-referrer"
