@@ -39,8 +39,8 @@ export default function Login({ onLogin }: LoginProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://i.postimg.cc/D0bT0bLS/man-holding-woman-back-evening-sea-shore-(1).jpg" 
-          alt="Couple on the beach at evening" 
+          src="https://i.postimg.cc/hPmqLxwJ/upscalemedia-transformed-(1).png" 
+          alt="Family at the beach" 
           className="h-full w-full object-cover opacity-60"
           referrerPolicy="no-referrer"
         />
