@@ -48,18 +48,23 @@ export default function Hero() {
               </motion.button>
               <div className="flex items-center gap-4 md:gap-6 px-4">
                 <div className="flex -space-x-3 overflow-hidden">
-                  {[1, 2, 3, 4].map((i) => (
+                  {[
+                    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=100&h=100&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&h=100&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&h=100&auto=format&fit=crop',
+                    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=100&h=100&auto=format&fit=crop'
+                  ].map((url, i) => (
                     <img
                       key={i}
                       className="inline-block h-10 w-10 rounded-full ring-2 ring-brand-primary object-cover"
-                      src={`https://picsum.photos/seed/traveler${i}/100/100`}
+                      src={url}
                       alt="Traveler"
                       referrerPolicy="no-referrer"
                     />
                   ))}
                 </div>
                 <span className="text-xs font-medium text-white/60">
-                  +1.5k socios activos
+                  +6k socios activos
                 </span>
               </div>
             </div>
