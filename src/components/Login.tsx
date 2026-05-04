@@ -20,7 +20,10 @@ export default function Login({ onLogin }: LoginProps) {
 
     // Simulating a bit of delay for the "experience"
     setTimeout(() => {
-      if (username === 'FCTRAVELMEMBER' && password === 'FCGT2026') {
+      const normalizedUsername = username.trim();
+      const normalizedPassword = password.trim();
+
+      if (normalizedUsername === 'VIPMEMBERFC' && normalizedPassword === 'Mp2010') {
         onLogin(true);
       } else {
         setError('Acceso denegado. Verifique sus credenciales.');
